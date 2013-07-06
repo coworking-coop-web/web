@@ -107,10 +107,10 @@ body{
 /* サブメニュー階層は通常は非表示 */
 .mod_header{
   .mod_header_nav{
-    ul.submenu{position:absolute; left:-1px; width:auto; display:none; border:solid 1px #000000; z-index:9999;
+    ul ul{position:absolute; left:-1px; width:auto; display:none; border:solid 1px #000000; z-index:9999;
       li{clear:both; border:none; border-bottom:solid 1px #000000; width:180px;
-        a{display:block; text-align:left; background-color:#333; color:$fontstrongColor03;font-weight:bold; padding:7px;}
-        a:hover{background-color:#FFBF00; color:$fontbaseColor;}
+        a{display:block; text-align:left; background-color:#333; color:$fontstrongColor03!important;font-weight:bold; padding:7px;}
+        a:hover{background-color:#FFBF00; color:$fontbaseColor!important;}
         }
       li:last-child{border:none;}
     }
@@ -119,7 +119,7 @@ body{
 @media screen and (max-width:960px){
 .mod_header{
   .mod_header_nav{
-    ul.submenu{margin:0; max-width:none;
+    ul ul{margin:0; max-width:none;
       li{margin:0;
         a{}
         }
@@ -131,9 +131,9 @@ body{
 @media screen and (max-width:640px){
 .mod_header{
   .mod_header_nav{
-    ul.submenu{position:relative; left:0px;border:none; margin:0; padding:0;border-top:solid 1px #CCC;
+    ul ul{position:relative; left:0px;border:none; margin:0; padding:0;border-top:solid 1px #CCC;
       li{clear:both; border-bottom:solid 1px #CCC; width:100%;
-        a{display:block; text-align:left; background-color:transparent; color:$fontbaseColor;font-weight:normal; padding:7px 7px 7px 30px;}
+        a{display:block; text-align:left; background-color:transparent; color:$fontbaseColor!important;font-weight:normal; padding:7px 7px 7px 30px;}
         a:hover{background-color:transparent; color:$fontbaseColor;}
         }
       li:last-child{border:none;}

@@ -119,13 +119,13 @@ function dropdown(){
   });
 		//クリックされるとドロップダウン非表示
 	$(".mod_header_nav ul li a").click(function(event){
-			$("ul.nav ul").hide();
+		$("ul.nav ul").hide();
 });
 }
 
 function nodrop(){
 	//ドロップダウン表示	   
-		$("ul.nav li").hover(function () {
+	$("ul.nav li").hover(function () {
     	$("ul:not(:animated)",this).show();
  	},
   	function () {

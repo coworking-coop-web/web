@@ -91,18 +91,24 @@
 
 /* mod_breadcrumbs */
 .mod_breadcrumbs{margin:0 auto; width:940px; text-align:right; padding:37px 0 0 0;
-  ol li{display:inline;}
-  ol li a{padding:0 15px 0 0; margin:0 2px 0 0;	background:transparent url("#{$imgDir}bg_breadcrumbs.gif") no-repeat 100% 45%;}
+  ul {display:inline;}
+  ul li{display:inline;}
+  ul li a{padding:0 15px 0 0; margin:0 2px 0 0;	background:transparent url("#{$imgDir}bg_breadcrumbs.gif") no-repeat 100% 45%;}
+  ul li a.nav-selected{padding:0; margin:0;	background:none;}
 }
-.mod_breadcrumbs ol li a:link    {color:$fontlinkColor02; text-decoration:none;}
-.mod_breadcrumbs ol li a:visited {color:$fontlinkColor02; text-decoration:none;}
-.mod_breadcrumbs ol li a:hover   {color:$fontlinkColor02; text-decoration:underline ;}
-.mod_breadcrumbs ol li a:active  {color:$fontlinkColor02; text-decoration:underline ;}
+.mod_breadcrumbs ul li a:link    {color:$fontlinkColor02; text-decoration:none;}
+.mod_breadcrumbs ul li a:visited {color:$fontlinkColor02; text-decoration:none;}
+.mod_breadcrumbs ul li a:hover   {color:$fontlinkColor02; text-decoration:underline ;}
+.mod_breadcrumbs ul li a:active  {color:$fontlinkColor02; text-decoration:underline ;}
+.mod_breadcrumbs ul li a.nav-selected:link    {color:$fontbaseColor; text-decoration:none;}
+.mod_breadcrumbs ul li a.nav-selected:visited {color:$fontbaseColor; text-decoration:none;}
+.mod_breadcrumbs ul li a.nav-selected:hover   {color:$fontbaseColor; text-decoration:none ;}
+.mod_breadcrumbs ul li a.nav-selected:active  {color:$fontbaseColor; text-decoration:none ;}
 @media screen and (max-width:960px){
-.mod_breadcrumbs{width:100%; text-align:left; padding:10px 0 0 0;
-  ol{ margin:0 10px 0 10px;}
-  ol li{display:inline;}
-  ol li a{}
+.mod_breadcrumbs{width:100%; text-align:left; padding:10px 10px 0 10px;@include box-sizing(border-box);
+  ul{}
+  ul li{display:inline;}
+  ul li a{}
 }
 }
 
@@ -596,49 +602,51 @@
 /*
  mod_form
 *****************************************************************************/
-.mod_pagecontents .mod_form{
+.mod_pagecontents form{margin:0 0 100px 0; background-color: #FFFFFF;border-bottom: 1px solid #999999;border-top: 2px solid #999999;
  .essential{color:$fontstrongColor04; font-weight:normal;}
  select{padding:7px;}
- select.time{margin:0 0 5px 0;}
  input{@include box-sizing(border-box); border:solid 1px #CCCCCC; width:80%; padding:10px;}
- input.number01{width:30%; margin:0 5px 0 5px;}
- input.number{width:30%; margin:0 0 10px 5px;}
- input.check{border:none; width:auto; padding:0px; margin:0;}
- label{margin:0 20px 0 5px; cursor:pointer;}
- input:checked + label{font-weight:bold;}
+ input#Question21{width:30%;}
+  input.formBlockSubmitButton{border:none; cursor:pointer; background-color:#FF8000; color:#FFF; font-weight:bold; width:300px; text-align:center;}
+ .radioPair{display:inline-block; margin:0 20px 0 0;}
+ .radioPair input{border:none; width:auto; padding:0px; margin:0;}
+ .checkboxList input{border:none; width:auto; padding:0px; margin:0;}
+ label{font-weight:bold;}
  textarea{@include box-sizing(border-box); border:solid 1px #CCCCCC; width:80%; padding:10px;}
  input:focus,textarea:focus{background-color:#FFFFCC;}
-  dl.tabletype{
-    dt{padding-bottom:0px; width:225px;}
-    dd{ padding:15px 15px 15px 242px;}
-  }
-  dl.spacename{display:table; border:solid 2px $ColorVisatitle; width:100%;@include box-sizing(border-box); margin-bottom:19px;
-    dt{display:table-cell; width:200px; background-color:$ColorVisatitle; color:$fontstrongColor03; font-weight:bold; font-size:$baseFontSize+2px;font-size:$baseFontSizeRem+0.2rem; text-align:center; padding:20px 0 20px 0;}
-    dd{display:table-cell; background-color:#FFF;
-      input{border:none; width:100%; font-size:$baseFontSize+16px;font-size:$baseFontSizeRem+1.6rem; font-weight:bold;padding:20px;}
-    }
-  }
+ table.formBlockSurveyTable{width:100%;
+ th{padding:20px; vertical-align:top;border-bottom: 1px solid #999999;}
+ td{padding:20px; vertical-align:top;border-bottom: 1px solid #999999;}
+
+ }
+}
+@media screen and (max-width:960px){
+.mod_pagecontents form{margin:0 10px 100px 10px;}
 }
 
-@media screen and (max-width:960px){
-.mod_pagecontents .mod_form{
+@media screen and (max-width:700px){
+.mod_pagecontents form{margin:0 10px 100px 10px;
  .essential{}
+ select{}
  input{width:100%;}
+ input#Question21{width:100%;}
+  input.formBlockSubmitButton{width:100%;}
+ .radioPair{}
+ .radioPair input{}
+ .checkboxList input{margin:0 0 7px 0;}
  label{}
- input:checked + label{}
  textarea{width:100%;}
-  dl.tabletype{
-    dt{float:none;padding-bottom:12px; width:auto;background-color:#EEE;}
-    dd{padding:12px 17px 12px 17px;}
-  }
-  dl.spacename{display:block;
-    dt{display:block; width:100%; padding:10px; text-align:left;}
-    dd{display:block;
-      input{padding:5px;}
-    }
-  }
+ input:focus,textarea:focus{}
+ table.formBlockSurveyTable{
+ th{display: list-item;}
+ td{display: list-item;}
+
+ }
 }
 }
+
+
+
 /* spaceform */
 .mod_pagecontents .mod_form.spaceform{
  select{width:100%; height:100%; padding:15px;}
@@ -662,37 +670,7 @@
 }
 }
 
-/* mod_formbtn */
-.mod_pagecontents .mod_form .mod_formbtn{margin:23px 0 23px 0;
-  ul{text-align:center;
-    li{display:inline-block; padding:0; margin:0 10px 0 10px;
-      input{border:none; cursor:pointer; background-color:#FF8000; color:#FFF; font-weight:bold; width:150px; text-align:center;}
-      }
-    }
-}
-.mod_pagecontents .mod_form.spaceform .mod_formbtn{
-  ul{text-align:right;
-    li{
-      input{width:300px;}
-      }
-    }
-}
-@media screen and (max-width:640px){
-.mod_pagecontents .mod_form .mod_formbtn{
-  ul{
-    li{
-      input{@include boxShadow;}
-      }
-    }
-}
-.mod_pagecontents .mod_form.spaceform .mod_formbtn{
-  ul{text-align:center;
-    li{
-      input{}
-      }
-    }
-}
-}
+
 
 /****************************************************************************
  mod_pagefootermenu
