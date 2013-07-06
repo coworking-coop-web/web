@@ -380,28 +380,29 @@ body {
 .mod_footer .mod_relation form {
   float: right;
   margin: 3px 21px 0 0;
+  width: 204px;
+  border: solid 1px #CCCCCC;
 }
 /* line 179, sass/_common.scss */
+.mod_footer .mod_relation form h3 {
+  display: none;
+}
+/* line 180, sass/_common.scss */
 .mod_footer .mod_relation form input[type="search"] {
   -webkit-appearance: textfield;
   -webkit-box-sizing: content-box;
 }
-/* line 180, sass/_common.scss */
+/* line 181, sass/_common.scss */
 .mod_footer .mod_relation form input[type="search"]::-webkit-search-decoration {
   display: none;
 }
-/* line 181, sass/_common.scss */
-.mod_footer .mod_relation form input.search:focus {
+/* line 182, sass/_common.scss */
+.mod_footer .mod_relation form input.ccm-search-block-text:focus {
   outline: none;
 }
-/* line 182, sass/_common.scss */
-.mod_footer .mod_relation form p {
-  width: 204px;
-  border: solid 1px #CCCCCC;
-}
 /* line 183, sass/_common.scss */
-.mod_footer .mod_relation form input.search {
-  width: 170px;
+.mod_footer .mod_relation form input.ccm-search-block-text {
+  width: 160px;
   height: 29px;
   line-height: 29px;
   float: left;
@@ -409,10 +410,14 @@ body {
   padding: 0 0 0 5px;
 }
 /* line 184, sass/_common.scss */
-.mod_footer .mod_relation form input#search_btn {
-  width: 29px;
+.mod_footer .mod_relation form input.ccm-search-block-submit {
+  width: 39px;
   height: 29px;
   float: right;
+  border: none;
+  cursor: pointer;
+  background-color: #555;
+  color: #FFF;
 }
 /* line 187, sass/_common.scss */
 .mod_footer .lt-ie8 form p {
@@ -481,70 +486,67 @@ body {
   .mod_footer .mod_relation {
     width: 100%;
   }
-  /* line 215, sass/_common.scss */
+  /* line 212, sass/_common.scss */
   .mod_footer .mod_footernav {
     width: 100%;
     padding: 10px 0 20px 0;
   }
-  /* line 216, sass/_common.scss */
+  /* line 213, sass/_common.scss */
   .mod_footer .mod_footernav h1.footernavtitle {
     float: none;
     width: 97%;
     padding: 0 0 20px 3%;
   }
-  /* line 217, sass/_common.scss */
+  /* line 214, sass/_common.scss */
   .mod_footer .mod_footernav .mod_footernav_block:nth-child(2) {
     border-left: none;
   }
 }
 @media screen and (max-width: 717px) {
-  /* line 223, sass/_common.scss */
+  /* line 220, sass/_common.scss */
   .mod_footer .mod_relation {
     top: 150px;
   }
-  /* line 227, sass/_common.scss */
+  /* line 224, sass/_common.scss */
   .mod_footer .mod_relation form {
     float: left;
     margin: 3px 21px 0 20px;
+    width: 60%;
   }
-  /* line 228, sass/_common.scss */
-  .mod_footer .mod_relation form p {
-    width: 194px;
+  /* line 225, sass/_common.scss */
+  .mod_footer .mod_relation form input.ccm-search-block-text {
+    width: 70%;
   }
-  /* line 229, sass/_common.scss */
-  .mod_footer .mod_relation form input.search {
-    width: 160px;
+  /* line 226, sass/_common.scss */
+  .mod_footer .mod_relation form input.ccm-search-block-submit {
+    width: 25%;
   }
   /* line 230, sass/_common.scss */
-  .mod_footer .mod_relation form input#search_btn {
-    width: 29px;
-  }
-  /* line 234, sass/_common.scss */
   .mod_footer .mod_footernav h1.footernavtitle {
     width: 100%;
     padding: 0;
     text-align: center;
     margin: 0 0 80px 0;
   }
-  /* line 235, sass/_common.scss */
+  /* line 231, sass/_common.scss */
   .mod_footer .mod_footernav .mod_footernav_block {
     float: none;
     border-left: none;
     padding: 0;
     width: 100%;
   }
-  /* line 237, sass/_common.scss */
+  /* line 233, sass/_common.scss */
   .mod_footer .mod_footernav .mod_footernav_block h1 a {
     border-bottom: solid 1px #CCCCCC;
     padding: 10px;
     background: transparent url("../img/icon_next.png") no-repeat 95% 50%;
     background-size: 10px;
   }
-  /* line 239, sass/_common.scss */
+  /* line 235, sass/_common.scss */
   .mod_footer .mod_footernav .mod_footernav_block li {
     display: none;
   }
-  /* line 240, sass/_common.scss */
+  /* line 236, sass/_common.scss */
   .mod_footer .mod_footernav .mod_footernav_block section.even {
     margin-top: 0px;
   }
@@ -554,25 +556,25 @@ body {
 *****************************************************************************/
 /* Link
 -----------------------------------------*/
-/* line 254, sass/_common.scss */
+/* line 250, sass/_common.scss */
 a:link {
   color: #0052CC;
   text-decoration: none;
 }
 
-/* line 255, sass/_common.scss */
+/* line 251, sass/_common.scss */
 a:visited {
   color: #0052CC;
   text-decoration: none;
 }
 
-/* line 256, sass/_common.scss */
+/* line 252, sass/_common.scss */
 a:hover {
   color: #0052CC;
   text-decoration: underline;
 }
 
-/* line 257, sass/_common.scss */
+/* line 253, sass/_common.scss */
 a:active {
   color: #0052CC;
   text-decoration: underline;
@@ -580,14 +582,14 @@ a:active {
 
 /* ex_flexibleimg
 -----------------------------------------*/
-/* line 261, sass/_common.scss */
+/* line 257, sass/_common.scss */
 img.ex_flexibleimg {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-/* line 266, sass/_common.scss */
+/* line 262, sass/_common.scss */
 .ex_flexibleimg img {
   max-width: 100%;
   height: auto;
@@ -596,74 +598,74 @@ img.ex_flexibleimg {
 
 /* margin
 -----------------------------------------*/
-/* line 274, sass/_common.scss */
+/* line 270, sass/_common.scss */
 #area_main .marginBS {
   margin-bottom: 10px!important;
 }
 
-/* line 275, sass/_common.scss */
+/* line 271, sass/_common.scss */
 #area_main .marginBM {
   margin-bottom: 20px!important;
 }
 
-/* line 276, sass/_common.scss */
+/* line 272, sass/_common.scss */
 #area_main .marginT0 {
   margin-top: 0px!important;
 }
 
-/* line 277, sass/_common.scss */
+/* line 273, sass/_common.scss */
 #area_main .marginTSS {
   margin-top: 5px!important;
 }
 
-/* line 278, sass/_common.scss */
+/* line 274, sass/_common.scss */
 #area_main .marginTS {
   margin-top: 10px!important;
 }
 
-/* line 279, sass/_common.scss */
+/* line 275, sass/_common.scss */
 #area_main .marginTM {
   margin-top: 20px!important;
 }
 
-/* line 280, sass/_common.scss */
+/* line 276, sass/_common.scss */
 #area_main .marginTL {
   margin-top: 30px!important;
 }
 
-/* line 281, sass/_common.scss */
+/* line 277, sass/_common.scss */
 #area_main .marginRS {
   margin-right: 10px!important;
 }
 
 /* ex_clear
 -----------------------------------------*/
-/* line 285, sass/_common.scss */
+/* line 281, sass/_common.scss */
 .ex_clear {
   clear: both;
 }
 
 /* ex_opaity
 -----------------------------------------*/
-/* line 289, sass/_common.scss */
+/* line 285, sass/_common.scss */
 .ex_opaity a:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
 }
 
-/* line 290, sass/_common.scss */
+/* line 286, sass/_common.scss */
 .ex_opaity a:active {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
 }
 
-/* line 291, sass/_common.scss */
+/* line 287, sass/_common.scss */
 img.ex_opaity:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
 }
 
-/* line 292, sass/_common.scss */
+/* line 288, sass/_common.scss */
 img.ex_opaity:active {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
@@ -671,7 +673,7 @@ img.ex_opaity:active {
 
 /* clearfix
 -----------------------------------------*/
-/* line 295, sass/_common.scss */
+/* line 291, sass/_common.scss */
 .ex_clearfix {
   overflow: hidden;
   *zoom: 1;
