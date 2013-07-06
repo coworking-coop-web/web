@@ -2421,10 +2421,12 @@ img.ex_opaity:active {
   /* line 641, sass/style.scss */
   .mod_pagecontents form table.formBlockSurveyTable th {
     display: list-item;
+    list-style-type: none;
   }
   /* line 642, sass/style.scss */
   .mod_pagecontents form table.formBlockSurveyTable td {
     display: list-item;
+    list-style-type: none;
   }
 }
 /* spaceform */

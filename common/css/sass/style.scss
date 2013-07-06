@@ -638,8 +638,8 @@
  textarea{width:100%;}
  input:focus,textarea:focus{}
  table.formBlockSurveyTable{
- th{display: list-item;}
- td{display: list-item;}
+ th{display: list-item; list-style-type:none;}
+ td{display: list-item; list-style-type:none;}
 
  }
 }
