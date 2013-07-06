@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+$baseFontSizeRem: 1.4rem;
+$baseFontSize: 14px;
+$radius: 4px;
+$imgDir: "../img/";
+$fontbaseColor: #333;
+$fontstrongColor: #000;
+$fontstrongColor01: #0085B2;
+$fontstrongColor02: #FF5A26;
+$fontstrongColor03: #FFF;
+$fontstrongColor04: #D80000;
+$fontlinkColor: #333;
+$fontlinkColor02: #FF4000;
+$fontlinkColor03:#D80000;
+$ColorVision: #FFD049;
+$ColorVisa: #00BFFF;
+$ColorEntry: #FF4000;
+$ColorEvent: #00D9DB;
+$ColorBlog: #FF8000;
+$ColorProfile: #A2DB00;
+/* pagecolor */
+$ColorAbout: #FFE118;
+$ColorAbouttitle: #FFC000;
+$ColorInfo: #00D9DA;
+$ColorInfotitle: #00CACC;
+$ColorBlog: #FF4000;
+$ColorBlogtitle: #DF0000;
+$ColorContact: #A3D900;
+$ColorContacttitle:#84B400;
+$ColorSpace: #A3D900;
+$ColorSpacetitle:#84B400;
+$ColorVisa: #00BDFF;
+$ColorVisatitle:#17AFFF;
+/* info */
+$Coloreventtitle: #FF4738;
+$ColorSeminartitle: #00BCFF;
+
+
+/* opinioncolor */
+$Colorno01: #D9021A;
+$Colorno02: #27A230;
+$Colorno03: #EF7728;
+
+/* mod_pagefootermenu */
+$Colorfootermenu01: #9ECA45;
+$Colorfootermenu02: #FF2626;
+$Colorfootermenu03: #FF9326;
+
+/* mod_flow */
+$Colorflowline01:#FF8000;
+$Colorflowline02:#85B200;
+$Colorflowstrong01:#FF5A26;
+$Colorflowstrong02:#336600;
+$Colorflowbg01:#A3D900;
+
+/* mod_faq */
+$Colorfaqtitle01:#666;
+$Colorfaqtitle02:#FFE300;
+$Colorfaqbg:#FFF;
+
+/* mod_check */
+$Colorchecktitle01:#666;
+$Colorchecktitle02:#BDEFFF;
+$Colorcheckbg:#FFF;
+
+/* mod_linkblock */
+$Colorlinkblock01:#00BCFF;
+$Colorlinkblock02:#85B200;
+
+@mixin round($radius) {
+ border-radius : $radius;
+}
+@mixin boxShadow{
+ @include box-shadow(#CCC 2px 2px 3px);
+}
+@mixin boxShadow02{
+ @include box-shadow(#333 2px 2px 3px);
+}
+@mixin textShadow{
+@include text-shadow(0px 1px 1px #666);
+}
+
+/*****************************************************************************
+ font
+*****************************************************************************/
+html { font-size: 62.5%; }
+body {
+ -webkit-text-size-adjust: 100%;
+ word-break:break-all; 
+ word-wrap:break-word; 
+ font-family: "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "ＭＳ Ｐゴシック", "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+ text-align:justify;
+ text-justify:inter-ideograph;
+ font-size:$baseFontSizeRem;
+ font-size:$baseFontSize;
+ color:$fontbaseColor;
+}
+

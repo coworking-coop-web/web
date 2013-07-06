@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta name="description" content="">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="common/css/style.css">
+<script src="common/js/vendor/modernizr-2.6.2.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="common/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="common/js/vendor/jquery.carouFredSel-6.2.1.js"></script>
+<script src="common/js/vendor/scrollsmoothly.js"></script>
+<script src="common/js/vendor/jquery.tile.min.js"></script>
+<script src="common/js/main.js"></script>
+</head>
+
+<body id="pagetop" class="about">
+
+<header id="area_header">
+<div class="mod_header">
+<h1><img src="common/img/toplogo.jpg" width="184" height="90" alt="コワーキング協同組合"></h1>
+<nav class="mod_header_nav">
+<p class="navtitle">MENU</p>
+<ul class="ex_clearfix">
+<li><a href="about.html">About</a></li>
+<li><a href="#">information</a></li>
+<li><a href="#">coworking space</a></li>
+<li><a href="#">visa.jp</a></li>
+<li><a href="#">job</a></li>
+<li><a href="#">blog</a></li>
+<li><a href="#">contact</a></li>
+</ul>
+<!--mod_header_nav_end--></nav>
+<!--mod_header_end--></div>
+<!--area_header_end--></header>
+
+<article id="area_main">
+<header class="mod_pageheader ex_clearfix">
+<h1><span>About</span><strong>コワーキング協同組合について</strong></h1>
+<!--mod_pageheader_end--></header>
+
+<div class="mod_breadcrumbs">
+<ol>
+<li><a href="index.html">HOME</a></li>
+<li><a href="about.html">About</a></li>
+<li>新規組合員お申し込み</li>
+</ol>
+<!-- mod_breadcrumbs_end --></div>
+
+<section class="mod_pagecontents">
+<h1 class="pagetitle">新規組合員お申し込み</h1>
+
+<section class="mod_pagecontents_sec ex_clearfix">
+<h1 class="sectitle">お申し込みフォーム</h1>
+<p><strong>この度はご加入いただき、誠にありがとうございます。<br>
+個人情報の取り扱いに同意の上、入力内容の確認画面へお進みください。</strong></p>
+
+<div class="mod_form">
+<form>
+<dl class="tabletype">
+<dt>法人名・屋号</dt>
+<dd><input type="text" id="coop" name="coop" value="" autofocus/></dd>
+<dt>代表者名<span class="essential">[必須]</span></dt>
+<dd><input type="text" id="name" name="name" value=""/></dd>
+<dt>代表者名（フリガナ）<span class="essential">[必須]</span></dt>
+<dd><input type="text" id="kana" name="kana" value=""/></dd>
+<dt>コワーキング・スペース名<br><span class="essential">（運営者の方のみ）</span></dt>
+<dd><input type="text" id="space" name="space" value=""/></dd>
+<dt>会員種別<span class="essential">[必須]</span></dt>
+<dd><input class="check" type="radio" name="kind" value="組合員" id="kind_01" /><label for="kind_01">組合員</label>&nbsp;
+<input class="check" type="radio" name="kind" value="賛助会員" id="kind_02" /><label for="kind_02">賛助会員</label></dd>
+<dt>事業形態<span class="essential">[必須]</span></dt>
+<dd><input class="check" type="radio" name="business" value="個人" id="business_01" /><label for="business_01">個人</label>&nbsp;
+<input class="check" type="radio" name="business" value="法人" id="business_02" /><label for="business_02">法人</label></dd>
+<dt>事業内容</dt>
+<dd><textarea name="content" rows="10" cols="50" id="content" placeholder="事業内容をお書きください。"></textarea></dd>
+<dt>事業所所在地<span class="essential">[必須]</span></dt>
+<dd>〒<input class="number" type="text" id="post" name="post" value=""/><br>
+<input type="text" id="address" name="address" value=""/></dd>
+<dt>電話番号<span class="essential">[必須]</span></dt>
+<dd><input type="tel" id="tel" name="tel" value="" /></dd>
+<dt>FAX番号</dt>
+<dd><input type="tel" id="fax" name="fax" value="" /></dd>
+<dt>メールアドレス<span class="essential">[必須]</span></dt>
+<dd><input type="email" id="email" name="email" value="" /></dd>
+<dt>ウェブサイトURL</dt>
+<dd><input type="text" id="url" name="url" value="" /></dd>
+<dt>ご希望のアカウントID<span class="essential">[必須]</span></dt>
+<dd><input type="text" id="idno" name="idno" value="" /></dd>
+<dt>定款<span class="essential">[必須]</span></dt>
+<dd><input class="check" type="checkbox" name="check" value="組合員" id="check" /><label for="check">コワーキング協同組合定款を読んで確認しました</label></dd>
+<dt>出資金の口数<span class="essential">[必須]</span></dt>
+<dd><input class="number01" type="text" id="number" name="number" value="" />口</dd>
+<dt>メッセージなど</dt>
+<dd><textarea name="message" rows="10" cols="50" id="message" placeholder="メッセージ・質問などございましたらご自由にお書きください。"></textarea></dd>
+</dl>
+
+<div class="mod_formbtn">
+<ul>
+<li class="send"><input type="submit" class="" value="送　信"></li>
+</ul>
+<!--mod_formbtn_end--></div>
+
+</form>
+<!--mod_form_end--></div>
+
+<!--mod_pagecontents_sec_end--></section>
+<!--mod_contents_end--></section>
+
+
+
+<footer class="mod_mainfooter">
+<p class="lead">コワーキング協同組合は、新しい働き方で社会、暮らしを豊かなものにかえていきます。</p>
+<p class="pagetop"><a class="smoothScroll" href="#pagetop"><img src="common/img/pagetop.gif" width="100" height="48" alt="ページの上部へ戻る"></a></p>
+</footer>
+<!--area_main_end--></article>
+
+
+<footer id="area_footer">
+<div class="mod_footer">
+<nav class="mod_footernav ex_clearfix">
+<h1 class="footernavtitle"><img src="common/img/footerlogo.gif" width="191" height="125" alt="コワーキング協同組合"></h1>
+<div class="mod_footernav_block">
+<section>
+<h1><a href="about.html">コワーキング協同組合について</a></h1>
+<ul>
+<li><a href="#">Vision</a></li>
+<li><a href="#">コワーキングとは</a></li>
+<li><a href="#">組合概要</a></li>
+<li><a href="#">入会案内</a></li>
+<li><a href="#">加入お申し込み</a></li>
+<li><a href="#">よくある質問</a></li>
+</ul>
+</section>
+<!--mod_footernav_block_end--></div>
+<div class="mod_footernav_block">
+<section>
+<h1><a href="#">インフォメーション</a></h1>
+<ul>
+<li><a href="#">イベント一覧</a></li>
+<li><a href="#">お知らせ一覧</a></li>
+</ul>
+</section>
+<section class="even">
+<h1><a href="#">コワーキングスペースの紹介</a></h1>
+<ul>
+<li><a href="#">コワーキングスペース一覧</a></li>
+</ul>
+</section>
+<!--mod_footernav_block_end--></div>
+<div class="mod_footernav_block">
+<section>
+<h1><a href="#">コワーキングvisa.jp</a></h1>
+<ul>
+<li><a href="#">Visa.jpとは</a></li>
+<li><a href="#">Visa.jp一覧</a></li>
+</ul>
+</section>
+<section class="even">
+<h1><a href="#">ブログ</a></h1>
+<h1><a href="#">お問い合わせ</a></h1>
+<h1><a href="#">プライバシー・ポリシー</a></h1>
+</section>
+<!--mod_footernav_block_end--></div>
+<!--mod_footernav_end--></nav>
+
+<div class="mod_relation ex_clearfix">
+<ul class="ex_opaity">
+<li><a href="https://www.facebook.com/bccjp.net"><img src="common/img/icon_fb.gif" width="36" height="35" alt="facebook"></a></li>
+<li><a href="#"><img src="common/img/icon_twitter.gif" width="36" height="35" alt="Twitter"></a></li>
+</ul>
+<form id="searchform" method="get" action="XXX.cgi">
+<p class="search ex_clearfix">
+<input type="text" value="" id="search" name="search" class="search">
+<input type="image" alt="検索" src="common/img/icon_search.gif" id="search_btn" class="search_btn">
+</p>
+</form>
+<!-- mod_relation_end --></div>
+
+<!--mod_footer_end--></div>
+
+<!--area_footer_end--></footer>
+</body>
+</html>

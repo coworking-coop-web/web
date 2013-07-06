@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta name="description" content="">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="common/css/style.css">
+<script src="common/js/vendor/modernizr-2.6.2.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="common/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="common/js/vendor/jquery.carouFredSel-6.2.1.js"></script>
+<script src="common/js/vendor/scrollsmoothly.js"></script>
+<script src="common/js/vendor/jquery.tile.min.js"></script>
+<script src="common/js/main.js"></script>
+</head>
+
+<body id="pagetop" class="space">
+
+<header id="area_header">
+<div class="mod_header">
+<h1><img src="common/img/toplogo.jpg" width="184" height="90" alt="コワーキング協同組合"></h1>
+<nav class="mod_header_nav">
+<p class="navtitle">MENU</p>
+<ul class="ex_clearfix">
+<li><a href="about.html">About</a></li>
+<li><a href="#">information</a></li>
+<li><a href="#">coworking space</a></li>
+<li><a href="#">visa.jp</a></li>
+<li><a href="#">job</a></li>
+<li><a href="#">blog</a></li>
+<li><a href="#">contact</a></li>
+</ul>
+<!--mod_header_nav_end--></nav>
+<!--mod_header_end--></div>
+<!--area_header_end--></header>
+
+<article id="area_main">
+<header class="mod_pageheader ex_clearfix">
+<h1><span>Coworking Space</span><strong>コワーキングスペースの紹介</strong></h1>
+<!--mod_pageheader_end--></header>
+
+<div class="mod_breadcrumbs">
+<ol>
+<li><a href="index.html">HOME</a></li>
+<li>コワーキングスペース一覧</li>
+</ol>
+<!-- mod_breadcrumbs_end --></div>
+
+<section class="mod_pagecontents">
+<h1 class="pagetitle">coworking space search<small></small></h1>
+
+<section class="mod_pagecontents_sec ex_clearfix">
+<h1 class="sectitle">コワーキングスペースを検索</h1>
+<div class="mod_pagecontents_sec_box">
+<div class="mod_form spaceform">
+<form>
+<dl>
+<dt>エリアから選択</dt>
+<dd><select id="spaceaddress" name="spaceaddress">  
+<option value="" selected="selected">都道府県から選択</option>  
+<optgroup label="北海道・東北">
+	<option value="北海道">北海道</option>
+	<option value="青森県">青森県</option>
+	<option value="秋田県">秋田県</option>
+	<option value="岩手県">岩手県</option>
+	<option value="山形県">山形県</option>
+	<option value="宮城県">宮城県</option>
+	<option value="福島県">福島県</option>
+</optgroup>
+<optgroup label="甲信越・北陸">
+	<option value="山梨県">山梨県</option>
+	<option value="長野県">長野県</option>
+	<option value="新潟県">新潟県</option>
+	<option value="富山県">富山県</option>
+	<option value="石川県">石川県</option>
+	<option value="福井県">福井県</option>
+</optgroup>
+<optgroup label="関東">
+	<option value="茨城県">茨城県</option>
+	<option value="栃木県">栃木県</option>
+	<option value="群馬県">群馬県</option>
+	<option value="埼玉県">埼玉県</option>
+	<option value="千葉県">千葉県</option>
+	<option value="東京都">東京都</option>
+	<option value="神奈川県">神奈川県</option>
+</optgroup>
+<optgroup label="東海">
+	<option value="愛知県">愛知県</option>
+	<option value="静岡県">静岡県</option>
+	<option value="岐阜県">岐阜県</option>
+	<option value="三重県">三重県</option>
+</optgroup>
+<optgroup label="関西">
+	<option value="大阪府">大阪府</option>
+	<option value="兵庫県">兵庫県</option>
+	<option value="京都府">京都府</option>
+	<option value="滋賀県">滋賀県</option>
+	<option value="奈良県">奈良県</option>
+	<option value="和歌山県">和歌山県</option>
+</optgroup>
+<optgroup label="中国">
+	<option value="岡山県">岡山県</option>
+	<option value="広島県">広島県</option>
+	<option value="鳥取県">鳥取県</option>
+	<option value="島根県">島根県</option>
+	<option value="山口県">山口県</option>
+</optgroup>
+<optgroup label="四国">
+	<option value="徳島県">徳島県</option>
+	<option value="香川県">香川県</option>
+	<option value="愛媛県">愛媛県</option>
+	<option value="高知県">高知県</option>
+</optgroup>
+<optgroup label="九州・沖縄">
+	<option value="福岡県">福岡県</option>
+	<option value="佐賀県">佐賀県</option>
+	<option value="長崎県">長崎県</option>
+	<option value="熊本県">熊本県</option>
+	<option value="大分県">大分県</option>
+	<option value="宮崎県">宮崎県</option>
+	<option value="鹿児島県">鹿児島県</option>
+	<option value="沖縄県">沖縄県</option>
+</optgroup>
+</select></dd>
+<dt>コワーキングスペース名で検索</dt>
+<dd><input type="text" id="spacename" name="spacename" value="" /></dd>
+</dl>
+<p><input class="check" type="checkbox" id="spacevisa" name="spacevisa" value="コワーキングvisa.jpに登録している" /><label for="spacevisa">&nbsp;コワーキングvisa.jpに登録している</label></p>
+
+<div class="mod_formbtn">
+<ul>
+<li class="send"><input type="submit" value="送&#12288;信" class=""></li>
+</ul>
+<!--mod_formbtn_end--></div>
+
+</form>
+<!--mod_form_end--></div>
+
+
+
+<!--mod_pagecontents_sec_box_end--></div>
+<!--mod_pagecontents_sec_end--></section>
+
+<section class="mod_pagecontents_sec ex_clearfix">
+<h1 class="sectitle">検索結果</h1>
+<div class="mod_pagecontents_sec_box">
+<div class="mod_spacelist">
+<section class="mod_spacelist_entry">
+<h1>カフーツ</h1>
+<div class="mod_spacelist_entry_memo">
+<dl>
+<dt>所在地</dt>
+<dd>〒650-0015　兵庫県神戸市中央区多聞通2丁目1-17 第2マツノビル1F</dd>
+<dt>URL</dt>
+<dd><a href="http://cahootz.jp/" target="_blank">http://cahootz.jp/</a></dd>
+<dt>Mail</dt>
+<dd><a href="mailto:info@cahootz.jp">info@cahootz.jp</a></dd>
+<dt>TEL</dt>
+<dd>078-599-5809</dd>
+</dl>
+<!--mod_spacelist_entry_memo_end--></div>
+<ul>
+<li><img src="common/img/icon_coop.png" width="32" height="36" alt="コワーキング協同組合加盟"></li>
+<li><img src="common/img/icon_visa.png" width="38" height="36" alt="コワーキングvisa.jp加盟"></li>
+</ul>
+<p class="vasalink ex_opaity"><a href="#">コワーキングvisa.jpを利用する</a></p>
+<!--mod_spacelist_entry_end--></section>
+
+<section class="mod_spacelist_entry">
+<h1>カフーツ</h1>
+<div class="mod_spacelist_entry_memo">
+<dl>
+<dt>所在地</dt>
+<dd>〒650-0015　兵庫県神戸市中央区多聞通2丁目1-17 第2マツノビル1F</dd>
+<dt>URL</dt>
+<dd><a href="http://cahootz.jp/" target="_blank">http://cahootz.jp/</a></dd>
+<dt>Mail</dt>
+<dd><a href="mailto:info@cahootz.jp">info@cahootz.jp</a></dd>
+<dt>TEL</dt>
+<dd>078-599-5809</dd>
+</dl>
+<!--mod_spacelist_entry_memo_end--></div>
+<ul>
+<li><img src="common/img/icon_coop.png" width="32" height="36" alt="コワーキング協同組合加盟"></li>
+<li><img src="common/img/icon_visa.png" width="38" height="36" alt="コワーキングvisa.jp加盟"></li>
+</ul>
+<p class="vasalink ex_opaity"><a href="#">コワーキングvisa.jpを利用する</a></p>
+<!--mod_spacelist_entry_end--></section>
+
+<section class="mod_spacelist_entry">
+<h1>カフーツ</h1>
+<div class="mod_spacelist_entry_memo">
+<dl>
+<dt>所在地</dt>
+<dd>〒650-0015　兵庫県神戸市中央区多聞通2丁目1-17 第2マツノビル1F</dd>
+<dt>URL</dt>
+<dd><a href="http://cahootz.jp/" target="_blank">http://cahootz.jp/</a></dd>
+<dt>Mail</dt>
+<dd><a href="mailto:info@cahootz.jp">info@cahootz.jp</a></dd>
+<dt>TEL</dt>
+<dd>078-599-5809</dd>
+</dl>
+<!--mod_spacelist_entry_memo_end--></div>
+<ul>
+<li><img src="common/img/icon_coop.png" width="32" height="36" alt="コワーキング協同組合加盟"></li>
+<li><img src="common/img/icon_visa.png" width="38" height="36" alt="コワーキングvisa.jp加盟"></li>
+</ul>
+<p class="vasalink ex_opaity"><a href="#">コワーキングvisa.jpを利用する</a></p>
+<!--mod_spacelist_entry_end--></section>
+
+
+
+
+
+
+<!--mod_spacelist_end--></div>
+<!--mod_pagecontents_sec_box_end--></div>
+<!--mod_pagecontents_sec_end--></section>
+
+
+
+<!--mod_contents_end--></section>
+
+
+<footer class="mod_mainfooter">
+<p class="lead">コワーキング協同組合は、新しい働き方で社会、暮らしを豊かなものにかえていきます。</p>
+<p class="pagetop"><a class="smoothScroll" href="#pagetop"><img src="common/img/pagetop.gif" width="100" height="48" alt="ページの上部へ戻る"></a></p>
+</footer>
+<!--area_main_end--></article>
+
+
+<footer id="area_footer">
+<div class="mod_footer">
+<nav class="mod_footernav ex_clearfix">
+<h1 class="footernavtitle"><img src="common/img/footerlogo.gif" width="191" height="125" alt="コワーキング協同組合"></h1>
+<div class="mod_footernav_block">
+<section>
+<h1><a href="about.html">コワーキング協同組合について</a></h1>
+<ul>
+<li><a href="#">Vision</a></li>
+<li><a href="#">コワーキングとは</a></li>
+<li><a href="#">組合概要</a></li>
+<li><a href="#">入会案内</a></li>
+<li><a href="#">加入お申し込み</a></li>
+<li><a href="#">よくある質問</a></li>
+</ul>
+</section>
+<!--mod_footernav_block_end--></div>
+<div class="mod_footernav_block">
+<section>
+<h1><a href="#">インフォメーション</a></h1>
+<ul>
+<li><a href="#">イベント一覧</a></li>
+<li><a href="#">お知らせ一覧</a></li>
+</ul>
+</section>
+<section class="even">
+<h1><a href="#">コワーキングスペースの紹介</a></h1>
+<ul>
+<li><a href="#">コワーキングスペース一覧</a></li>
+</ul>
+</section>
+<!--mod_footernav_block_end--></div>
+<div class="mod_footernav_block">
+<section>
+<h1><a href="#">コワーキングvisa.jp</a></h1>
+<ul>
+<li><a href="#">Visa.jpとは</a></li>
+<li><a href="#">Visa.jp一覧</a></li>
+</ul>
+</section>
+<section class="even">
+<h1><a href="#">ブログ</a></h1>
+<h1><a href="#">お問い合わせ</a></h1>
+<h1><a href="#">プライバシー・ポリシー</a></h1>
+</section>
+<!--mod_footernav_block_end--></div>
+<!--mod_footernav_end--></nav>
+
+<div class="mod_relation ex_clearfix">
+<ul class="ex_opaity">
+<li><a href="https://www.facebook.com/bccjp.net"><img src="common/img/icon_fb.gif" width="36" height="35" alt="facebook"></a></li>
+<li><a href="#"><img src="common/img/icon_twitter.gif" width="36" height="35" alt="Twitter"></a></li>
+</ul>
+<form id="searchform" method="get" action="XXX.cgi">
+<p class="search ex_clearfix">
+<input type="text" value="" id="search" name="search" class="search">
+<input type="image" alt="検索" src="common/img/icon_search.gif" id="search_btn" class="search_btn">
+</p>
+</form>
+<!-- mod_relation_end --></div>
+
+<!--mod_footer_end--></div>
+
+<!--area_footer_end--></footer>
+</body>
+</html>
