@@ -111,21 +111,21 @@ $(function(){
 
 function dropdown(){
 	//ドロップダウン表示	   
-	$("ul.nav li").hover(function () {
+	$(".mod_header_nav ul.nav li").hover(function () {
     	$("ul:not(:animated)",this).show();
  	},
   	function () {
     	$("ul:not(:animated)",this).hide();
   });
 		//クリックされるとドロップダウン非表示
-	$(".mod_header_nav ul li a").click(function(event){
-		$("ul.nav ul").hide();
+	$(".mod_header_nav .mod_header_nav ul li a").click(function(event){
+		$(".mod_header_nav ul.nav ul").hide();
 });
 }
 
 function nodrop(){
 	//ドロップダウン表示	   
-	$("ul.nav li").hover(function () {
+	$(".mod_header_nav ul.nav li").hover(function () {
     	$("ul:not(:animated)",this).show();
  	},
   	function () {
@@ -152,7 +152,7 @@ var x = 640;
 	if (w <= x) {
   nodrop()
 	} else {
-		$("ul.nav ul").css("display","none");
+		$(".mod_header_nav ul.nav ul").css("display","none");
  dropdown();
 	}
 });
