@@ -187,11 +187,11 @@
 <li><a href="https://www.facebook.com/bccjp.net"><img src="common/img/icon_fb.gif" width="36" height="35" alt="facebook"></a></li>
 <li><a href="#"><img src="common/img/icon_twitter.gif" width="36" height="35" alt="Twitter"></a></li>
 </ul>
-<form id="searchform" method="get" action="XXX.cgi">
-<p class="search ex_clearfix">
-<input type="text" value="" id="search" name="search" class="search">
-<input type="image" alt="検索" src="common/img/icon_search.gif" id="search_btn" class="search_btn">
-</p>
+<form action="/index.php/about/coop/" method="get" class="ccm-search-block-form">
+<h3>ページ内検索</h3>	
+<input name="search_paths[]" type="hidden" value="" />
+<input name="query" type="text" value="" class="ccm-search-block-text" />
+<input name="submit" type="submit" value="検索" class="ccm-search-block-submit" />
 </form>
 <!-- mod_relation_end --></div>
 
