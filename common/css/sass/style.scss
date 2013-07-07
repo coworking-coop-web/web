@@ -579,9 +579,8 @@
 .mod_blogrelation{
   h1{font-weight:bold;font-size:$baseFontSize+4px;font-size:$baseFontSizeRem+0.4rem; border-bottom:solid 2px $ColorBlogtitle; padding:0 3px 4px 3px;}
   .mod_blogrelation_inner{margin:8px 5px 10px 22px;
-    ol li{line-height:1.4; padding:0 0 15px 0;}
-    ol.indent li{	text-indent:-1em;	padding-left:1em;}
-    ol.indent li:before{ content: "・"; display:inline;}
+    ol li{line-height:1.4; padding:0 0 15px 0; list-style-type:disc;}
+    ol.indent li{	}
      a:link    {color:$fontlinkColor; text-decoration:none;}
      a:visited {color:$fontlinkColor; text-decoration:none;}
      a:hover   {color:$fontlinkColor; text-decoration:underline;}
@@ -592,7 +591,7 @@
 @media screen and (max-width:960px){
 .mod_blogrelation{
   h1{}
-  .mod_blogrelation_inner{margin:8px 5px 10px 5px;
+  .mod_blogrelation_inner{
     ol li{}
     ol.indent li{}
 
