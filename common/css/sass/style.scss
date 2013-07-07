@@ -581,6 +581,7 @@
   .mod_blogrelation_inner{margin:8px 5px 10px 22px;
     ol li{line-height:1.4; padding:0 0 15px 0;}
     ol.indent li{	text-indent:-1em;	padding-left:1em;}
+    ol.indent li:before{ content: "・"; display:inline;}
      a:link    {color:$fontlinkColor; text-decoration:none;}
      a:visited {color:$fontlinkColor; text-decoration:none;}
      a:hover   {color:$fontlinkColor; text-decoration:underline;}
