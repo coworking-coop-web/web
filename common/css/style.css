@@ -2204,7 +2204,7 @@ img.ex_opaity:active {
   vertical-align: middle;
   padding: 15px 10px 5px 25px;
   font-weight: normal;
-  background: transparent url("../img/icon_tag.png") no-repeat left 15px;
+  /*background:transparent url("../img/icon_tag.png") no-repeat left 15px;*/
 }
 
 /* line 566, sass/style.scss */

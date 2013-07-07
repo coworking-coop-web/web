@@ -561,7 +561,7 @@
 /* blog */
 .blog .mod_entry .mod_entry_header h1{background-color:#EDEDED; 
   em{ padding:15px 0 13px 0;background-color:$ColorBlogtitle; }
-  span{display:inline-block; width:auto; color:$fontbaseColor; float:right; font-size:$baseFontSize;font-size:$baseFontSizeRem; vertical-align:middle;padding:15px 10px 5px 25px;font-weight:normal;background:transparent url("#{$imgDir}icon_tag.png") no-repeat left 15px;}
+  span{display:inline-block; width:auto; color:$fontbaseColor; float:right; font-size:$baseFontSize;font-size:$baseFontSizeRem; vertical-align:middle;padding:15px 10px 5px 25px;font-weight:normal;/*background:transparent url("#{$imgDir}icon_tag.png") no-repeat left 15px;*/}
 }
 .blog .mod_entry_inner{margin:0;padding:18px;}
 .blog .mod_pagecontents_sec{margin: 0 0 20px 0;}
