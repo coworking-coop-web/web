@@ -2256,12 +2256,12 @@ img.ex_opaity:active {
   margin: 8px 5px 10px 22px;
 }
 /* line 582, sass/style.scss */
-.mod_blogrelation .mod_blogrelation_inner ul li {
+.mod_blogrelation .mod_blogrelation_inner ol li {
   line-height: 1.4;
   padding: 0 0 15px 0;
 }
 /* line 583, sass/style.scss */
-.mod_blogrelation .mod_blogrelation_inner ul.indent li {
+.mod_blogrelation .mod_blogrelation_inner ol.indent li {
   text-indent: -1em;
   padding-left: 1em;
 }
