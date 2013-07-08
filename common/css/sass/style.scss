@@ -213,6 +213,10 @@
 .visa .mod_pagecontents .pagetitle{border-left:solid 16px $ColorVisatitle;}
 .visa .mod_pagecontents_sec .sectitle{background: $ColorVisatitle; color:#FFF;}
 .visa .mod_pagecontents_sec .sectitle:after {border-top-color: $ColorVisatitle;}
+.search .mod_pageheader{ background-color:$ColorSearch; color:#FFF;}
+.search .mod_pagecontents .pagetitle{border-left:solid 16px $ColorSearchtitle;}
+.search .mod_pagecontents_sec .sectitle{background: $ColorSearchtitle; color:#FFF;}
+.search .mod_pagecontents_sec .sectitle:after {border-top-color: $ColorSearchtitle;}
 
 
 /*
