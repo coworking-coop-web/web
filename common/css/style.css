@@ -2321,6 +2321,11 @@ img.ex_opaity:active {
 }
 /* line 611, sass/style.scss */
 .mod_pagecontents form select {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: solid 1px #CCCCCC;
+  width: 80%;
   padding: 7px;
 }
 /* line 612, sass/style.scss */
@@ -2337,6 +2342,10 @@ img.ex_opaity:active {
   width: 30%;
 }
 /* line 614, sass/style.scss */
+.mod_pagecontents form input.ccm-input-date {
+  width: 100px!important;
+}
+/* line 615, sass/style.scss */
 .mod_pagecontents form input.formBlockSubmitButton {
   border: none;
   cursor: pointer;
@@ -2346,30 +2355,30 @@ img.ex_opaity:active {
   width: 300px;
   text-align: center;
 }
-/* line 615, sass/style.scss */
+/* line 616, sass/style.scss */
 .mod_pagecontents form .radioPair {
   display: inline-block;
   margin: 0 20px 0 0;
 }
-/* line 616, sass/style.scss */
+/* line 617, sass/style.scss */
 .mod_pagecontents form .radioPair input {
   border: none;
   width: auto;
   padding: 0px;
   margin: 0;
 }
-/* line 617, sass/style.scss */
+/* line 618, sass/style.scss */
 .mod_pagecontents form .checkboxList input {
   border: none;
   width: auto;
   padding: 0px;
   margin: 0;
 }
-/* line 618, sass/style.scss */
+/* line 619, sass/style.scss */
 .mod_pagecontents form label {
   font-weight: bold;
 }
-/* line 619, sass/style.scss */
+/* line 620, sass/style.scss */
 .mod_pagecontents form textarea {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2378,21 +2387,21 @@ img.ex_opaity:active {
   width: 80%;
   padding: 10px;
 }
-/* line 620, sass/style.scss */
+/* line 621, sass/style.scss */
 .mod_pagecontents form input:focus, .mod_pagecontents form textarea:focus {
   background-color: #FFFFCC;
 }
-/* line 621, sass/style.scss */
+/* line 622, sass/style.scss */
 .mod_pagecontents form table.formBlockSurveyTable {
   width: 100%;
 }
-/* line 622, sass/style.scss */
+/* line 623, sass/style.scss */
 .mod_pagecontents form table.formBlockSurveyTable th {
   padding: 20px;
   vertical-align: top;
   border-bottom: 1px solid #999999;
 }
-/* line 623, sass/style.scss */
+/* line 624, sass/style.scss */
 .mod_pagecontents form table.formBlockSurveyTable td {
   padding: 20px;
   vertical-align: top;
@@ -2400,134 +2409,74 @@ img.ex_opaity:active {
 }
 
 @media screen and (max-width: 960px) {
-  /* line 628, sass/style.scss */
+  /* line 629, sass/style.scss */
   .mod_pagecontents form {
     margin: 0 10px 100px 10px;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 632, sass/style.scss */
+  /* line 633, sass/style.scss */
   .mod_pagecontents form {
     margin: 0 10px 100px 10px;
   }
-  /* line 635, sass/style.scss */
+  /* line 636, sass/style.scss */
   .mod_pagecontents form input {
     width: 100%;
   }
-  /* line 636, sass/style.scss */
+  /* line 637, sass/style.scss */
   .mod_pagecontents form input#Question21 {
     width: 100%;
   }
-  /* line 637, sass/style.scss */
+  /* line 638, sass/style.scss */
   .mod_pagecontents form input.formBlockSubmitButton {
     width: 100%;
   }
-  /* line 640, sass/style.scss */
+  /* line 641, sass/style.scss */
   .mod_pagecontents form .checkboxList input {
     margin: 0 0 7px 0;
   }
-  /* line 642, sass/style.scss */
+  /* line 643, sass/style.scss */
   .mod_pagecontents form textarea {
     width: 100%;
   }
-  /* line 645, sass/style.scss */
+  /* line 646, sass/style.scss */
   .mod_pagecontents form table.formBlockSurveyTable th {
     display: list-item;
     list-style-type: none;
   }
-  /* line 646, sass/style.scss */
+  /* line 647, sass/style.scss */
   .mod_pagecontents form table.formBlockSurveyTable td {
     display: list-item;
     list-style-type: none;
   }
 }
-/* spaceform */
-/* line 656, sass/style.scss */
-.mod_pagecontents .mod_form.spaceform select {
-  width: 100%;
-  height: 100%;
-  padding: 15px;
-}
-/* line 657, sass/style.scss */
-.mod_pagecontents .mod_form.spaceform input {
-  width: 100%;
-  height: 100%;
-}
-/* line 658, sass/style.scss */
-.mod_pagecontents .mod_form.spaceform input.check {
-  border: none;
-  width: auto;
-  padding: 0px;
-  margin: 0;
-}
-/* line 660, sass/style.scss */
-.mod_pagecontents .mod_form.spaceform dl dt {
-  background-color: #777;
-  font-weight: bold;
-  color: #FFF;
-  float: left;
-  width: 300px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  margin: 0;
-}
-/* line 661, sass/style.scss */
-.mod_pagecontents .mod_form.spaceform dl dd {
-  padding: 0 0 0 330px;
-  height: 50px;
-  margin-bottom: 17px;
-}
-/* line 663, sass/style.scss */
-.mod_pagecontents .mod_form.spaceform p {
-  clear: both;
-}
-
-@media screen and (max-width: 640px) {
-  /* line 670, sass/style.scss */
-  .mod_pagecontents .mod_form.spaceform dl dt {
-    float: none;
-    width: 100%;
-    margin: 0 0 15px 0;
-  }
-  /* line 671, sass/style.scss */
-  .mod_pagecontents .mod_form.spaceform dl dd {
-    padding: 0;
-    height: 50px;
-    margin-bottom: 17px;
-  }
-  /* line 673, sass/style.scss */
-  .mod_pagecontents .mod_form.spaceform p {
-    clear: both;
-  }
-}
 /****************************************************************************
  mod_pagefootermenu
 *****************************************************************************/
-/* line 682, sass/style.scss */
+/* line 656, sass/style.scss */
 .mod_pagefootermenu {
   margin: 0 auto;
   width: 940px;
   margin-bottom: 100px;
 }
-/* line 683, sass/style.scss */
+/* line 657, sass/style.scss */
 .mod_pagefootermenu p {
   line-height: 1.7;
   margin: 0 0 25px 0;
 }
-/* line 684, sass/style.scss */
+/* line 658, sass/style.scss */
 .mod_pagefootermenu p strong {
   color: #0085b2;
   font-size: 20px;
   font-size: 2rem;
 }
-/* line 687, sass/style.scss */
+/* line 661, sass/style.scss */
 .mod_pagefootermenu ul li {
   text-shadow: 0px 1px 1px #666666;
   width: 460px;
   height: 100px;
 }
-/* line 688, sass/style.scss */
+/* line 662, sass/style.scss */
 .mod_pagefootermenu ul li a {
   display: block;
   font-weight: bold;
@@ -2538,49 +2487,49 @@ img.ex_opaity:active {
   padding: 22px 0 0 120px;
   height: 78px;
 }
-/* line 689, sass/style.scss */
+/* line 663, sass/style.scss */
 .mod_pagefootermenu ul li a:hover {
   text-decoration: none;
 }
-/* line 691, sass/style.scss */
+/* line 665, sass/style.scss */
 .mod_pagefootermenu ul li.footermenu01 {
   float: left;
 }
-/* line 692, sass/style.scss */
+/* line 666, sass/style.scss */
 .mod_pagefootermenu ul li.footermenu02 {
   float: right;
 }
-/* line 693, sass/style.scss */
+/* line 667, sass/style.scss */
 .mod_pagefootermenu ul li.footermenu03 {
   float: right;
 }
-/* line 694, sass/style.scss */
+/* line 668, sass/style.scss */
 .mod_pagefootermenu ul li.footermenu01 a {
   background: #9eca45 url("../img/bg_pagefootermenu_01.gif") no-repeat left top;
 }
-/* line 695, sass/style.scss */
+/* line 669, sass/style.scss */
 .mod_pagefootermenu ul li.footermenu02 a {
   background: #ff2626 url("../img/bg_pagefootermenu_02.gif") no-repeat left top;
 }
-/* line 696, sass/style.scss */
+/* line 670, sass/style.scss */
 .mod_pagefootermenu ul li.footermenu03 a {
   background: #ff9326 url("../img/bg_pagefootermenu_03.gif") no-repeat left top;
 }
 
 @media screen and (max-width: 960px) {
-  /* line 702, sass/style.scss */
+  /* line 676, sass/style.scss */
   .mod_pagefootermenu {
     width: 100%;
   }
-  /* line 703, sass/style.scss */
+  /* line 677, sass/style.scss */
   .mod_pagefootermenu p {
     margin: 0 10px 25px 10px;
   }
-  /* line 704, sass/style.scss */
+  /* line 678, sass/style.scss */
   .mod_pagefootermenu ul {
     margin: 0 10px 0 10px;
   }
-  /* line 705, sass/style.scss */
+  /* line 679, sass/style.scss */
   .mod_pagefootermenu ul li {
     width: 99%;
     margin: 0 0 20px 0;
@@ -2588,26 +2537,26 @@ img.ex_opaity:active {
     -moz-box-shadow: #cccccc 2px 2px 3px;
     box-shadow: #cccccc 2px 2px 3px;
   }
-  /* line 706, sass/style.scss */
+  /* line 680, sass/style.scss */
   .mod_pagefootermenu ul li a {
     padding: 0 10px 0 110px;
     height: 100px;
   }
-  /* line 707, sass/style.scss */
+  /* line 681, sass/style.scss */
   .mod_pagefootermenu ul li a span {
     display: table-cell;
     height: 100px;
     vertical-align: middle;
   }
-  /* line 710, sass/style.scss */
+  /* line 684, sass/style.scss */
   .mod_pagefootermenu ul li.footermenu01 {
     float: none;
   }
-  /* line 711, sass/style.scss */
+  /* line 685, sass/style.scss */
   .mod_pagefootermenu ul li.footermenu02 {
     float: none;
   }
-  /* line 712, sass/style.scss */
+  /* line 686, sass/style.scss */
   .mod_pagefootermenu ul li.footermenu03 {
     float: none;
   }
