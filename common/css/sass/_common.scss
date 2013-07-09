@@ -168,20 +168,20 @@ body{
 }
 
 /*****************************************************************************
- footer Style
+ footer Style 
 *****************************************************************************/
 .mod_footer{position:relative; margin:0 auto; width:960px;
   .mod_relation{ position:absolute; top:10px; right:10px; text-align:right;
    ul{float:right;
      li{display:inline;}
    }
-   form{ float:right; margin:3px 21px 0 0;width:204px; border:solid 1px #CCCCCC;
+   form{ float:right; margin:3px 21px 0 0;width:204px; border:solid 1px #CCCCCC;padding:0;
      h3{display:none;}
      input[type="search"] {-webkit-appearance: textfield;	-webkit-box-sizing: content-box;}
      input[type="search"]::-webkit-search-decoration {display: none;}
      input.ccm-search-block-text:focus{	outline:none;}
-     input.ccm-search-block-text{width:160px; height:29px;line-height:29px;float:left;border:none;padding:0 0 0 5px;}
-     input.ccm-search-block-submit{width:39px;	height:29px;float:right; border:none;cursor:pointer; background-color:#555;color:#FFF;}
+     input.ccm-search-block-text{width:160px; height:29px;line-height:29px;float:left;border:none;padding:0 0 0 5px; margin-bottom:0;}
+     input.ccm-search-block-submit{width:39px;	height:29px;float:right; border:none;cursor:pointer; background-color:#555;color:#FFF;margin-bottom:0;}
    }
   }
   .lt-ie8 form p{width:210px;}

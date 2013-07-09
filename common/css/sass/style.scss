@@ -650,6 +650,19 @@
 }
 }
 
+/* pageSearch ccm-search-block-form */
+form.ccm-search-block-form{ padding:20px 10px 20px 10px;
+  h3{display:none;}
+  h4{clear:both;}
+  input.ccm-search-block-text{@include box-sizing(border-box); float:left; width:80%; margin-bottom:20px;}
+  input.ccm-search-block-submit{@include box-sizing(border-box); float:right; width:19%; background-color:#555;color:#FFF; border:none; margin-bottom:20px;}
+  .searchResult{margin:0 0 20px 0;
+    h3{display:block; margin:0 0 5px 0;font-size:$baseFontSize +2px; font-size:$baseFontSizeRem +0.2rem;}
+    p{line-height:1.5;}
+  }
+}
+
+
 /****************************************************************************
  mod_pagefootermenu
 *****************************************************************************/
