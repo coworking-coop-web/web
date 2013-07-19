@@ -34,6 +34,9 @@ $ColorVisa: #00BDFF;
 $ColorVisatitle:#17AFFF;
 $ColorSearch: #F3970C;
 $ColorSearchtitle:#ED7735;
+$ColorPrivacy: #7F7F7F;
+$ColorPrivacytitle:#6E6E6E;
+
 /* info */
 $Coloreventtitle: #FF4738;
 $ColorSeminartitle: #00BCFF;
@@ -82,6 +85,7 @@ $Colorlinkblock02:#85B200;
 @mixin textShadow{
 @include text-shadow(0px 1px 1px #666);
 }
+
 
 /*****************************************************************************
  font

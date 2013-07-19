@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @import url(reset5.css);
+@import url(font.css);
 @import "compass";
 @import "settings";
 @import "common";
@@ -54,7 +55,8 @@
 .mod_indexmenu{width:96%; margin:0 2% 0 2%;
  .mod_indexmenu_block{background-image:none; margin:0 0 30px 0; float:none; width:99%;  background-color:#FFF; @include boxShadow;  
   a{
-  h1 {margin:0; padding:10px 5px 10px 5px; text-align:left;background:transparent url("#{$imgDir}icon_next.png") no-repeat 95% 10px; background-size:10px;}
+  h1 {margin:0; padding:10px 5px 10px 5px; text-align:left; position:relative;}
+  h1:after{	font-family: 'icomoon'; color:#999;	content: attr(data-icon);	speak: none;	font-weight: normal;	font-variant: normal;	text-transform: none;	line-height: 1;	-webkit-font-smoothing: antialiased;	content: "\e004"; position:absolute; top:7px; right:10px;}
   h1.vision{color:$ColorVision;}
   h1.visa{color:$ColorVisa}
   h1.entry{color:$ColorEntry;}
@@ -176,6 +178,7 @@
 @media screen and (max-width:640px){
 .mod_pagecontents{
   .mod_pagecontents_sec{
+    iframe{max-width: 100%;width: 100%;}
     dl.tabletype{
       dt{float:none; width:auto ;background-color:#EEE;}
       dd{padding:12px 5px 12px 17px;}
@@ -217,7 +220,10 @@
 .search .mod_pagecontents .pagetitle{border-left:solid 16px $ColorSearchtitle;}
 .search .mod_pagecontents_sec .sectitle{background: $ColorSearchtitle; color:#FFF;}
 .search .mod_pagecontents_sec .sectitle:after {border-top-color: $ColorSearchtitle;}
-
+.privacy .mod_pageheader{ background-color:$ColorPrivacy; color:#FFF;}
+.privacy .mod_pagecontents .pagetitle{border-left:solid 16px $ColorPrivacytitle;}
+.privacy .mod_pagecontents_sec .sectitle{background: $ColorPrivacytitle; color:#FFF;}
+.privacy .mod_pagecontents_sec .sectitle:after {border-top-color: $ColorPrivacytitle;}
 
 /*
  mod_opinion
@@ -367,8 +373,8 @@
 .mod_infolist{width:960px; margin-right:-20px;
   .mod_infolist_entry{ position:relative; float:left; width:300px; padding:0 20px 0 0;
     a{display:block; background-color:#FFF; padding:10px;
-      p.tag{position:absolute; top:10px; left:10px; width:280px; background-color:$Coloreventtitle; margin:0;
-        span{display:inline-block; background-color:#666666; color:#FFF; font-weight:bold; padding:2px 5px 2px 5px;}
+      p.tag{color:#FFF;line-height:1.8;position:absolute; top:10px; left:10px; width:275px; padding-right:5px; background-color:$Coloreventtitle; margin:0; text-align:right;
+        span{display:inline-block; float:left; background-color:#666666; font-weight:bold; padding:0 5px 0 5px;}
       }
       p.tag.seminar{background-color:$ColorSeminartitle;}
       img{position:absolute; top:47px; left:10px;max-width: 100%;height:auto;display: block;}
@@ -522,7 +528,9 @@
     }
   }
   .mod_entry_inner{margin:0 0 0 180px; width:auto; padding:18px 18px 18px 0;
-    h2{font-size:$baseFontSize +10px;font-size:$baseFontSizeRem +1.0rem;line-height:1.3; border-bottom:dotted 1px #000;font-weight:normal; margin:0 0 22px 0;} 
+    h2{font-size:$baseFontSize +10px;font-size:$baseFontSizeRem +1.0rem;line-height:1.3; border-bottom:dotted 1px #000;font-weight:normal; margin:0 0 22px 0;
+		  a{color:$fontbaseColor;}
+		}
     img{max-width: 100%;height: auto;display: block; margin:0 0 25px 0;}
     p.link{text-align:right; margin:19px 0 0 0;
       a{display:inline-block; background-color:#FF4738;color:$fontstrongColor03; font-weight:bold; padding:9px;}
@@ -568,6 +576,7 @@
   span{display:inline-block; width:auto; color:$fontbaseColor; float:right; font-size:$baseFontSize;font-size:$baseFontSizeRem; vertical-align:middle;padding:15px 10px 5px 25px;font-weight:normal;/*background:transparent url("#{$imgDir}icon_tag.png") no-repeat left 15px;*/}
 }
 .blog .mod_entry_inner{margin:0;padding:18px;}
+.blog .mod_pagecontents .mod_pagecontents_sec strong {font-size:$baseFontSize;font-size:$baseFontSizeRem;}
 .blog .mod_pagecontents_sec{margin: 0 0 20px 0;}
 .blog .mod_pagecontents_sec:last-child{margin: 0 0 70px 0;}
 @media screen and (max-width:640px){
@@ -576,6 +585,11 @@
 /*blogentry*/
 .blogentry .mod_entry_inner{margin:0 0 0 180px;}
 .blogentry .mod_pagecontents_sec{ margin: 0 0 70px 0;}
+
+@media screen and (max-width:640px){
+.blogentry .mod_entry_inner{margin:0;}
+}
+
 
 /*
  mod_blogrelation
@@ -590,6 +604,11 @@
      a:hover   {color:$fontlinkColor; text-decoration:underline;}
      a:active  {color:$fontlinkColor; text-decoration:underline;}
   }
+	ul.monthsPages{overflow:visible; padding:0 0 0 5px;
+	 li{list-style-type:disc; padding:2px 0 5px 0;line-height:1.4;
+	   a{color:$fontbaseColor;}
+	 }
+	}
 }
 
 @media screen and (max-width:960px){
@@ -602,6 +621,26 @@
   }
 }
 }
+
+
+/* pagination */
+#pagination{
+  margin:50px 0 50px 0;
+ 	width:100%; /* 横幅設定 */
+	text-align:center;
+  span{	padding:0;display:block; float:left; width:10%; text-align:center;padding:0 1px 0 0;@include box-sizing(border-box);line-height:48px;
+    a,span,strong{font-weight:bold; color:#CC0000; background-color:#FFF; border:solid 1px #999999; display:block;line-height:50px; width:100%; height:50px;@include box-sizing(border-box);}  
+    a:hover{background-color:#CC0000; color:#FFF; border-color:#CC0000; text-decoration:none;} 
+    span{background-color:#999; color:#FFF; border-color:#999;} 
+    strong{background-color:#CC0000; color:#FFF; border-color:#CC0000;} 
+  }
+ span.pagination-left span{}
+ span.pagination-right{}
+ }
+#pagination:after{content: "";   display: block;   clear: both;}
+
+
+
 
 /*
  mod_form
@@ -654,13 +693,14 @@
 form.ccm-search-block-form{ padding:20px 10px 20px 10px;
   h3{display:none;}
   h4{clear:both;}
-  input.ccm-search-block-text{@include box-sizing(border-box); float:left; width:80%; margin-bottom:20px;}
+  input.ccm-search-block-text{@include box-sizing(border-box); float:left; width:80%; margin-bottom:18px;}
   input.ccm-search-block-submit{@include box-sizing(border-box); float:right; width:19%; background-color:#555;color:#FFF; border:none; margin-bottom:20px;}
   .searchResult{margin:0 0 20px 0;
     h3{display:block; margin:0 0 5px 0;font-size:$baseFontSize +2px; font-size:$baseFontSizeRem +0.2rem;}
     p{line-height:1.5;}
   }
 }
+form.ccm-search-block-form:after{content: "";   display: block;   clear: both;}
 
 
 /****************************************************************************
