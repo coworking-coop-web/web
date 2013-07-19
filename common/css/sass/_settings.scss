@@ -73,6 +73,11 @@ $Colorcheckbg:#FFF;
 $Colorlinkblock01:#00BCFF;
 $Colorlinkblock02:#85B200;
 
+/* footermenu01 */
+$Colorfootermenu01:#9ECA45;
+$Colorfootermenu02:#FF2626;
+$Colorfootermenu03:#FF9326;
+
 @mixin round($radius) {
  border-radius : $radius;
 }
