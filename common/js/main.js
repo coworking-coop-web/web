@@ -1,5 +1,5 @@
 // index slide
-$(document).ready(function() {
+$(function(){
 		$(".slides").carouFredSel({
 		auto		: 4000,
     responsive  : true,
@@ -16,7 +16,7 @@ $(document).ready(function() {
 });
 //index menu
 //load 
-jQuery(function($){
+$(function(){
 	$(window).bind('load', function(){
 		var w = $(window).width();
 		var x = 640;
@@ -28,7 +28,7 @@ jQuery(function($){
 	});
 });
 //load 
-jQuery(function($){
+$(function(){
 	$(window).bind('load', function(){
 		var w = $(window).width();
 		var x = 717;
@@ -39,7 +39,7 @@ jQuery(function($){
 	});
 });
 //resize
-jQuery(function($){
+$(function(){
 	$(window).resize(function(){
 	var w = $(window).width();
 	var x = 640;
@@ -53,7 +53,7 @@ jQuery(function($){
 	});
 });
 //resize
-jQuery(function($){
+$(function(){
 	$(window).resize(function(){
 	var w = $(window).width();
 	var x = 717;
@@ -64,8 +64,6 @@ jQuery(function($){
 		}
 	});
 });
-
-
 
 //common menu
 $(function(){
@@ -157,6 +155,22 @@ var x = 640;
 	}
 });
 
+});
+
+//Searchform
+$(function(){
+	var selectarea = $("form select#prefecture");
+	var selectward = $("form select#ward");
+	$(selectward).attr("disabled","disabled");
+
+	$(selectarea).change(function(){
+　　var area = $(this).val();
+		if(area == "13"){
+		$(selectward).removeAttr("disabled");
+	}else{
+		$(selectward).attr("disabled","disabled").val("");
+		}
+	});
 });
 
 
