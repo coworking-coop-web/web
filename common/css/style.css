@@ -487,12 +487,12 @@ body {
 /* line 201, sass/_common.scss */
 .mod_footer .mod_footernav .mod_footernav_block a:hover {
   color: #333;
-  text-decoration: none;
+  text-decoration: underline;
 }
 /* line 202, sass/_common.scss */
 .mod_footer .mod_footernav .mod_footernav_block a:active {
   color: #333;
-  text-decoration: none;
+  text-decoration: underline;
 }
 /* line 203, sass/_common.scss */
 .mod_footer .mod_footernav .mod_footernav_block section.even {
