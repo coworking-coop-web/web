@@ -137,7 +137,7 @@
     }
     dl.tabletype{border-bottom:solid 1px #999;border-top:solid 2px #999; background-color:#FFF;
       dt{float:left; width:105px; font-weight:bold; padding:12px 0 12px 17px; margin:0;}
-      dd{ padding:12px 5px 12px 122px; border-bottom:solid 1px #999999;
+      dd{ padding:12px 15px 12px 122px; border-bottom:solid 1px #999999;
         ul{margin:0!important;
           li{margin-bottom:1em;}
           li:last-child{margin-bottom:0;}
@@ -147,6 +147,10 @@
     dl.tabletype.wide{
       dt{width:155px;}
       dd{ padding-left:172px;}
+    }
+    dl.tabletype.exwide{
+      dt{width:350px;}
+      dd{ padding-left:367px;}
     }
     p.pdflink{margin:1em 0 0 0; background:transparent url("#{$imgDir}bg_pdf.png") no-repeat left top; padding:0 0 0 65px;
       a{display:table-cell; vertical-align:middle; height:60px; color:$fontlinkColor03;}
@@ -183,7 +187,7 @@
       dt{float:none; width:auto ;background-color:#EEE;}
       dd{padding:12px 5px 12px 17px;}
     }
-    dl.tabletype.wide{
+    dl.tabletype.wide,dl.tabletype.exwide{
       dt{width:auto;}
       dd{padding:12px 5px 12px 17px;}
     }
@@ -196,10 +200,18 @@
 .about .mod_pagecontents .pagetitle{border-left:solid 16px $ColorAbouttitle;}
 .about .mod_pagecontents_sec .sectitle{background: $ColorAbouttitle;}
 .about .mod_pagecontents_sec .sectitle:after {border-top-color: $ColorAbouttitle;}
+.service .mod_pageheader{ background-color:$ColorService;}
+.service .mod_pagecontents .pagetitle{border-left:solid 16px $ColorServicetitle;}
+.service .mod_pagecontents_sec .sectitle{background: $ColorServicetitle;}
+.service .mod_pagecontents_sec .sectitle:after {border-top-color: $ColorServicetitle;}
 .info .mod_pageheader{ background-color:$ColorInfo;}
 .info .mod_pagecontents .pagetitle{border-left:solid 16px $ColorInfotitle;}
 .info .mod_pagecontents_sec .sectitle{background: $ColorInfotitle;}
 .info .mod_pagecontents_sec .sectitle:after {border-top-color: $ColorInfotitle;}
+.list .mod_pageheader{ background-color:$ColorList;}
+.list .mod_pagecontents .pagetitle{border-left:solid 16px $ColorListtitle;}
+.list .mod_pagecontents_sec .sectitle{background: $ColorListtitle;}
+.list .mod_pagecontents_sec .sectitle:after {border-top-color: $ColorListtitle;}
 .blog .mod_pageheader{ background-color:$ColorBlog; color:#FFF;}
 .blog .mod_pagecontents .pagetitle{border-left:solid 16px $ColorBlogtitle;}
 .blog .mod_pagecontents_sec .sectitle{background: $ColorBlogtitle;}
@@ -318,7 +330,7 @@
 .mod_faq{ margin-top:20px;
   .faqtitle{display:table;background-color:$Colorfaqtitle02; vertical-align:top; width:100%;
     em{display:table-cell; background-color:$Colorfaqtitle01;font-size:$baseFontSize +26px;font-size:$baseFontSizeRem +2.6rem;font-weight:bold; color:$Colorfaqtitle02; font-family:Arial,Verdana,sans-serif; width:100px; text-align:center; padding:15px 0 15px 0; font-style:normal;}
-    span{display:table-cell; vertical-align:top; line-height:1.7; font-weight:normal; padding:15px;}
+    span{display:table-cell; vertical-align:middle; line-height:1.4; padding:15px;font-size:$baseFontSize +8px;font-size:$baseFontSizeRem +0.8rem;font-weight:bold;}
   }
   .mod_faq_answer{background-color:$Colorfaqbg; padding:25px 25px 5px 25px;
   }
@@ -648,7 +660,7 @@
 *****************************************************************************/
 .mod_pagecontents form{margin:0 0 100px 0; background-color: #FFFFFF;border-bottom: 1px solid #999999;border-top: 2px solid #999999;
  .essential{color:$fontstrongColor04; font-weight:normal;}
- select{@include box-sizing(border-box); border:solid 1px #CCCCCC; width:80%; padding:7px;}
+ select{@include box-sizing(border-box); border:solid 1px #CCCCCC; width:80%; padding:7px; line-height:2; }
  input{@include box-sizing(border-box); border:solid 1px #CCCCCC; width:80%; padding:10px;}
  input#Question21{width:30%;}
  input.ccm-input-date{width:100px!important;}
